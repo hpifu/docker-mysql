@@ -1,4 +1,4 @@
-version=1.0.0
+version=$(shell git describe --tags)
 repository=mysql
 user=hatlonely
 
