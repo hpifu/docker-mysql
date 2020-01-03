@@ -18,7 +18,8 @@ services:
       - "/var/docker/${repository}/log:/var/log/mysqld"
       - "/var/docker/${repository}/run:/var/run/mysqld"
     networks:
-      - ${repository}net
+      - online
 networks:
-  ${repository}net:
-    name: ${repository}net
+  online:
+    external: true
+    name: online
